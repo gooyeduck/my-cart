@@ -14,7 +14,7 @@
   }
 
   li {
-    border-radius: 10%;
+    border-radius: 1%;
     box-shadow: 0 3px 6px lightgrey;
     display: grid;
     place-items: center;
@@ -28,6 +28,7 @@
   .fab-button {
     background-color: #06c64c;
     border-radius: 30%;
+    padding: 20px;
 
     svg {
       fill: white;
@@ -52,7 +53,14 @@
   }
 
   .fab-action {
-    transform: translateY(50px) scale(0);
+    height: 75vh;
+    width: 65vw;
+    position: absolute;
+    bottom: 75px;
+    right: 0;
+    overflow-y: auto;
+    transform: translate(0%, 0%) scale(0);
+    transform-origin: bottom right;
     transition: transform 300ms, opacity 300ms;
     opacity: 0;
 
@@ -64,10 +72,13 @@
     }
 
     &.open {
-      transform: translateY(0) scale(1);
+      transform: translate(0, 0) scale(1);
       opacity: 1;
     }
-
+    p {
+      padding: 10px;
+      margin: 0;
+    }
     .tooltip {
       padding: 4px 6px;
       font-size: 12px;
@@ -80,6 +91,22 @@
       opacity: 0;
       transition: transform 300ms, opacity 300ms;
       user-select: none;
+    }
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background-color: #f1f1f1;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 5px;
+    }
+  
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
     }
   }
 }

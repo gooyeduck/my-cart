@@ -1,0 +1,72 @@
+.fab-container {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column-reverse;
+  position: fixed;
+  right: 2em;
+  bottom: 2em;
+  max-height: 52px;
+
+  &.open {
+    max-height: max-content;
+  }
+
+  li {
+    border-radius: 10%;
+    box-shadow: 0 3px 6px lightgrey;
+    display: grid;
+    place-items: center;
+    margin: 8px 0;
+    font-size: 28px;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      background-color: #f2f2f2;
+    }
+
+    &.fab-button {
+      background-color: #06c64c;
+      border-radius: 30%;
+      padding: 20px;
+
+      svg {
+        fill: white;
+      }
+    }
+
+    &.fab-action {
+      position: absolute;
+      bottom: 75px;
+      right: 0;
+      transform: translateY(100%);
+      transition: transform 0.3s ease-in-out;
+
+      &.open {
+        transform: translateY(0);
+      }
+
+      p {
+        padding: 10px;
+        margin: 0;
+      }
+
+      .tooltip {
+        padding: 4px 6px;
+        font-size: 12px;
+        position: absolute;
+        left: -12px;
+        transform: translateX(-75%);
+        background-color: #353b48;
+        border-radius: 4px;
+        color: white;
+        opacity: 0;
+        transition: transform 300ms, opacity 300ms;
+        user-select: none;
+      }
+    }
+  }
+}

@@ -16,7 +16,7 @@ const FabCart = ({ actions }) => {
         onClick={mouseClick}
       >
         {open ? <FaTimes /> : <FaShoppingCart />}
-        <span class="fab-count">1</span>
+        <span className="fab-count">1</span>
       </li>
       {actions.map((action, index) => (
         <li
@@ -25,9 +25,16 @@ const FabCart = ({ actions }) => {
           key={action.label}
           onClick={action.onClick}
         >
-          {action.icon}
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nulla accusamus, eaque similique laborum doloribus quas iusto ratione voluptates autem adipisci! Possimus eligendi veritatis dicta. Maiores quo sequi nam itaque.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nulla accusamus, eaque similique laborum doloribus quas iusto ratione voluptates autem adipisci! Possimus eligendi veritatis dicta. Maiores quo sequi nam itaque.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nulla accusamus, eaque similique laborum doloribus quas iusto ratione voluptates autem adipisci! Possimus eligendi veritatis dicta. Maiores quo sequi nam itaque.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nulla accusamus, eaque similique laborum doloribus quas iusto ratione voluptates autem adipisci! Possimus eligendi veritatis dicta. Maiores quo sequi nam itaque.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nulla accusamus, eaque similique laborum doloribus quas iusto ratione voluptates autem adipisci! Possimus eligendi veritatis dicta. Maiores quo sequi nam itaque.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nulla accusamus, eaque similique laborum doloribus quas iusto ratione voluptates autem adipisci! Possimus eligendi veritatis dicta. Maiores quo sequi nam itaque.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nulla accusamus, eaque similique laborum doloribus quas iusto ratione voluptates autem adipisci! Possimus eligendi veritatis dicta. Maiores quo sequi nam itaque.</p>
           < span className="tooltip" > {action.label}</span>
         </li >
+        
       ))}
     </ul >
   );
