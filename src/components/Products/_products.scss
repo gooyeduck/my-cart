@@ -3,6 +3,7 @@
 .wfc-products-section{
     @include wfc-property-loop(("padding":"0px", "margin":"0px", "list-style":"none", "max-width":"inherit", "width":"100%"));
     .product-details{
+        @include wfc-property-loop(("padding":"10px", "box-shadow":"0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5", "margin":"0px 0px 20px"));
         img{
             @include wfc-property-loop(("max-width":"300px", "width":"100%"));
         }

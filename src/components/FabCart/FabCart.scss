@@ -58,7 +58,7 @@
     position: absolute;
     bottom: 75px;
     right: 0;
-    overflow-y: auto;
+    overflow-y: scroll;
     transform: translate(0%, 0%) scale(0);
     transform-origin: bottom right;
     transition: transform 300ms, opacity 300ms;
