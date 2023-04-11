@@ -1,0 +1,16 @@
+@import '../Styles/global-functions';
+
+.wfc-products-section{
+    @include wfc-property-loop(("padding":"0px", "margin":"0px", "list-style":"none", "max-width":"inherit", "width":"100%"));
+    .product-details{
+        img{
+            @include wfc-property-loop(("max-width":"300px", "width":"100%"));
+        }
+        h5{
+            @include wfc-property-loop(("margin":"0px"));
+        }
+        p{
+            @include wfc-property-loop(("padding":"0px"));
+        }
+    }
+}

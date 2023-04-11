@@ -13,7 +13,7 @@
     max-height: max-content;
   }
 
-  li {
+  div {
     border-radius: 1%;
     box-shadow: 0 3px 6px lightgrey;
     display: grid;
@@ -54,7 +54,7 @@
 
   .fab-action {
     height: 75vh;
-    width: 65vw;
+    width: 30vw;
     position: absolute;
     bottom: 75px;
     right: 0;

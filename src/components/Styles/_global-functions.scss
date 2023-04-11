@@ -1,0 +1,41 @@
+@mixin wfc-global-padding($top, $right, $bottom, $left) {
+    @if $top != '' {
+        padding-top: $top;
+    }
+
+    @if $right != '' {
+        padding-right: $right;
+    }
+
+    @if $bottom != '' {
+        padding-bottom: $bottom;
+    }
+
+    @if $left != '' {
+        padding-left: $left;
+    }
+}
+
+@mixin wfc-global-margin($top, $right, $bottom, $left) {
+    @if $top != '' {
+        margin-top: $top;
+    }
+
+    @if $right != '' {
+        margin-right: $top;
+    }
+
+    @if $bottom != '' {
+        margin-bottom: $top;
+    }
+
+    @if $left != '' {
+        margin-left: $top;
+    }
+}
+
+@mixin wfc-property-loop($values) {
+    @each $property, $value in $values{
+        #{$property}:#{$value};
+    }
+}
