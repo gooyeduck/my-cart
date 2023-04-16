@@ -75,10 +75,7 @@
       transform: translate(0, 0) scale(1);
       opacity: 1;
     }
-    p {
-      padding: 10px;
-      margin: 0;
-    }
+
     .tooltip {
       padding: 4px 6px;
       font-size: 12px;
@@ -92,6 +89,7 @@
       transition: transform 300ms, opacity 300ms;
       user-select: none;
     }
+    
     &::-webkit-scrollbar {
       width: 10px;
     }

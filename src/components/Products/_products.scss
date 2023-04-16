@@ -1,17 +1,29 @@
 @import '../Styles/global-functions';
 
 .wfc-products-section{
-    @include wfc-property-loop(("padding":"0px", "margin":"0px", "list-style":"none", "max-width":"inherit", "width":"100%"));
+    @include wfc-property-loop(("padding":"0px", "margin":"0px", "list-style":"none", "max-width":"inherit", "width":"100%", "overflow-y":"scroll"));
+
     .product-details{
-        @include wfc-property-loop(("padding":"10px", "box-shadow":"0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5", "margin":"0px 0px 20px"));
+        @include wfc-property-loop(("padding":"10px", "box-shadow":"0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5", "margin":"1px 1px 20px 1px"));
+
         img{
             @include wfc-property-loop(("max-width":"300px", "width":"100%"));
         }
+
         h5{
-            @include wfc-property-loop(("margin":"0px"));
+            @include wfc-property-loop(("margin":"10px 0px 0px 0px", "font-weight":"700", "font-size":"25px", "line-height":"25px"));
         }
+
         p{
-            @include wfc-property-loop(("padding":"0px"));
+            @include wfc-property-loop(("padding":"10px 0px 10px 0px", "margin":"0px 0px 0px 0px","font-size":"1em", "color":"rgba(0,0,0,.4)"));
+        }
+
+        article{
+            @include wfc-property-loop(("padding":"0px 0px 10px 0px", "margin":"0px 0px 0px 0px", "color":"rgba(0,0,0,.68)", "text-align":"left", "font-size":"20px"));
+        }
+
+        .product-button-group{
+            @include wfc-property-loop(("display":"flex", "justify-content":"space-between"));
         }
     }
 }
